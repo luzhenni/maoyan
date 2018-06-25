@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+   <style>
+       *{
+           margin: 0;
+           padding: 0;
+       }
+       .clearFlexd::after{
+           content: "";
+           clear: both;
+           display: block;
+       }
+       .box1{
+           width: 100%;
+           height: 100px;
+           background: red;
+        
+       }
+       .box2{
+           width: 50%;
+           height: 100px;
+           background: skyblue;
+           float: left;
+       }
+       .box3{
+           width: 50%;
+           height: 100px;
+           background: pink;
+           float: left;
+       }
+       .toothbg{width:100%;height:20px;background:#41B61A;
+    background-image:-webkit-gradient(linear,50% 0,0 100%,from(transparent), color-stop(.5,transparent),color-stop(.5,#e5e5e5),to(#e5e5e5)),
+                    -webkit-gradient(linear,50% 0,100% 100%,from(transparent), color-stop(.5,transparent),color-stop(.5,#e5e5e5),to(#e5e5e5));
+    background-image:-moz-linear-gradient(50% 0 -45deg,transparent,transparent 50%,#e5e5e5 50%,#e5e5e5),
+                    -moz-linear-gradient(50% 0 -135deg,transparent,transparent 50%,#e5e5e5 50%,#e5e5e5);                                
+    background-size:30px 15px;
+    background-repeat:repeat-x;
+    background-position:0 100%;    }
+   </style>
+</head>
+<body class="clearFlexd">
+    <div class="toothbg"></div>
+	<div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>  
